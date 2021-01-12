@@ -102,3 +102,6 @@ zstyle ':completion:*:descriptions' format '[%d]'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':fzf-tab:complete:*' fzf-preview 'show $realpath'
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+# https://github.com/Homebrew/brew/issues/9139
+export HOMEBREW_CASK_OPTS="--no-quarantine"
